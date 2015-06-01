@@ -12,7 +12,7 @@ commsReceiveTask = TaskSpace.CommsReceiveTask( ...
 
 % For EW Sensing Task, arbitrarily set the start time to 4 respectively
 ewSensingTask = TaskSpace.EwSensingTask( ...
-    NamedConst.COMMS_CYCLE_TIME,NamedConst.HIGHEST_PRIORITY,4);
+    NamedConst.EW_SENSING_CYCLE_TIME,NamedConst.HIGHEST_PRIORITY,4);
 
 % IDLE task is used as a filler for empty cycle slots 
 % Not analyzed in this simulation

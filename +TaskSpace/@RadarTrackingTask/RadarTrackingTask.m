@@ -16,7 +16,7 @@ classdef RadarTrackingTask < TaskSpace.Task
     properties (Constant)
         MAX_NUMBER_OF_CONFIRM_TRIES = 5;
         NUMBER_OF_HITS_TO_CONFIRM = 3;
-        HIT_PROBABILITY = 0.95;
+        HIT_PROBABILITY = 0.8;
     end
     
     methods
@@ -53,10 +53,10 @@ classdef RadarTrackingTask < TaskSpace.Task
                         object.lostLock = NamedConst.TRUE;
                     end
                 end
-                
-                % execute the base class ExecuteTask
-                object = ExecuteTask@TaskSpace.Task(object,currentCycleTime);
             end
+            
+            % execute the base class ExecuteTask
+            object = ExecuteTask@TaskSpace.Task(object,currentCycleTime);
             
         end
         

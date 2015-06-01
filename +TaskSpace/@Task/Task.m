@@ -10,7 +10,7 @@ classdef Task
     been made non-abstract.
     %}
     
-    properties (SetAccess = private, GetAccess = public)
+    properties (SetAccess = protected, GetAccess = public)
         cycleTime;
         priority;
         startTime;
