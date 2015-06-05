@@ -7,7 +7,7 @@ classdef NamedConst
         FALSE   = 0;
         
         % Cycle related constants
-        NUMBER_SIMULATION_LOOP = 2;
+        NUMBER_SIMULATION_LOOP = 100;
         CYCLE_FREQUENCY = 40;   % cycle period of 1/40 = 25 ms
         MAXIMUM_NUMBER_OF_CYCLES_PER_SIMULATION_LOOP = ...
             10 * NamedConst.CYCLE_FREQUENCY;

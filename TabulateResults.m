@@ -16,8 +16,10 @@ end
 
 numberLostLock = 0;
 
-for taskIndex = 5:(4 + numberOfRadarTracks)
-    numberLostLock = numberLostLock + taskArray{taskIndex}.lostLock;
+if numberOfRadarTracks ~= 0
+    for taskIndex = 5:(4 + numberOfRadarTracks)
+        numberLostLock = numberLostLock + taskArray{taskIndex}.lostLock;
+    end
 end
 
 % keep the below code for later...
