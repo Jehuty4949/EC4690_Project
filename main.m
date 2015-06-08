@@ -17,7 +17,16 @@ switch simulationCase
         numberOfJamming         = 0;
     case 2
         numberOfRadarTracks     = 4;
+        numberOfJamming         = 0;
+    case 3
+        numberOfRadarTracks     = 2;
+        numberOfJamming         = 2;
+    case 4
+        numberOfRadarTracks     = 4;
         numberOfJamming         = 1;
+    case 5
+        numberOfRadarTracks     = 2;
+        numberOfJamming         = 2;
 end;
 
 totalNumberOfTasks = 5 + numberOfRadarTracks + numberOfJamming;
